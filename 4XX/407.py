@@ -26,12 +26,8 @@ while 1:
     num = int(input())
     if num == -9999:
         break
-    if num % 400 == 0:
+    if num % 400 == 0 or (num % 100 != 0 and num % 4 == 0):
         print(f"{num} is a leap year.")
-    elif num % 100 == 0:
-        print(f"{num} is not a leap year.")
-    elif num % 4 == 0:
-        print(f"{num} is a leap year. ")
     else:
         print(f"{num} is not a leap year.")
 
