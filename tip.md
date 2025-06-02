@@ -53,3 +53,19 @@
 - 608 : 找 list 9 個數
   - 會使用到 list.index, 整除//, 取餘數%
 - 609 : 開 2 個 2x2 的 list, 一直複製貼上
+
+### 7XX
+- 701 : tuple 增加是用 (num,) 
+- 702 : tuple 可以直接相加, sorted tuple 會回傳一個 list 型態的回來
+- 704 : set() 裡面有 s.add 增加元素
+- 705 : set() 是用 add 增加元素, 
+  - 判斷用 issubset, issuperset
+- 706 : 將句子轉成小寫放進 set, 利用 set 濾掉重複然後 count 數量
+- 707 : 記得要 sorted 排序後傳回
+  1. union
+  2. intersection
+  3. difference
+  4. symmetric_difference
+- 708 : 兩個 dict 相加用 dict1.update(dict2)
+  - 用 sorted 排序 key 輸出
+- 710 : 搜尋 key, 用 key in dictionary 判斷 true or flase
