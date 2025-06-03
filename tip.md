@@ -69,3 +69,14 @@
 - 708 : 兩個 dict 相加用 dict1.update(dict2)
   - 用 sorted 排序 key 輸出
 - 710 : 搜尋 key, 用 key in dictionary 判斷 true or flase
+
+### 8XX
+- 801 : string 可以看成是一個 dict，可以直街 for
+- 802 : 轉 ASCII 用 ord
+- 803 : 將句子單字用 split 分割放入 list, 取 list 後面三個, 用 join 把它們串再一起
+- 804 : 全部轉成大寫用 upper, 只有開頭大寫用 title, title 是第一個 upper 其他保持 lower
+- 805 : f"" 裡的{}, align center is ^
+- 807 : 切割字串放入 list, 再轉成 int 的 list
+- 808 : 直接把字串的符號用 replace 拿掉, 在用 isdigit 判斷
+- 809 : 判斷 password.isalnum() 只有包含英文和數字的情況下會返回 true 不能有類似符號的東西
+- 810 : 用 split 分割倒入新的 list 
