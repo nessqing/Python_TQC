@@ -80,3 +80,26 @@
 - 808 : 直接把字串的符號用 replace 拿掉, 在用 isdigit 判斷
 - 809 : 判斷 password.isalnum() 只有包含英文和數字的情況下會返回 true 不能有類似符號的東西
 - 810 : 用 split 分割倒入新的 list 
+
+### 9XX : 
+> 讀取檔案的指標是從頭指到尾, 如有需要用 seek 
+- 901 : 將字串寫入一個檔案, 檔案裡面的顯示要換行 "\n"
+- 902 : 將數字split讀取放到陣列, 之後再用 for 迴圈相加
+- 903 : write file 的時候選擇 "a" 可保留之前的文字
+- 904 : 
+  1. 先用 readlines 倒入 list, 再來用 strip 去頭尾的空白和空格 放入一個乾淨的 list
+  2. 開三個 list 分別 名字, 身高, 體重
+  3. 用 for 切片一個物件, 然後 split 放入一個乾淨的 templist
+  4. 分別放入 3 個 list類別
+  5. 用 index 去 list 找最大的身高或體重
+- 905 : 讀取寫入分開比較方便
+- 907 : split 算行數, split 算字數,
+- 908 : 
+  - split 成 list, 
+  - 然後把它轉成 set 塞選唯一值, 
+  - 然後用 sorted 排序回傳成一個 list
+  - 在用 list.count 去 for 排序過的唯一值看哪一個等於使用者輸入的次數
+- 909 : 寫入檔案讀行
+- 910 : 
+  - 直接先用 readlines 拆行進入 list, 
+  - 再來用 split.list 去判斷男生女生
