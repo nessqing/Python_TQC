@@ -24,8 +24,17 @@
 # 769
 # Sum of all digits of 769 is 22
 
-num = input()
-total = 0
-for item in num[::]:
-    total += int(item)
-print(f"Sum of all digits of {num} is {total}")
+# num = input()
+# total = 0
+# for item in num[::]:
+#     total += int(item)
+# print(f"Sum of all digits of {num} is {total}")
+
+num = eval(input())
+
+for i in range(num):
+    usr = input()
+    total = 0
+    for j in range(len(usr)):
+        total += int(usr[j])
+    print(f"Sum of all digits of {usr} is {total}")

@@ -34,16 +34,17 @@
 # -1.0
 
 def compute(a,b,c):
-    temp = b**2 - 4*a*c
-    if temp < 0:
-        print(f"Your equation has no root.")
-    elif temp == 0 :
-        print(f"{(-b + (b**2 - 4*a*c)) / (2*a)}")
-    else:
-        print(f"{(-b + (b**2 - 4*a*c)) / (2*a)}, {(-b - (b**2 - 4*a*c)) / (2*a)}")
+    if b**2 - 4*a*c > 0:
+        r1 = (-b+(b**2-4*a*c)**0.5)/(2*a)
+        r2 = (-b - (b ** 2 - 4 * a * c) ** 0.5) / (2 * a)
+        print(f"{r1}, {r2}")
+    elif b**2 - 4*a*c == 0:
+        r1 = (-b + (b ** 2 - 4 * a * c) ** 0.5) / 2 * a
+        print(r1)
+    elif b**2 - 2*a*c < 0:
+        print("Your equation has no root.")
 
 a = eval(input())
 b = eval(input())
 c = eval(input())
-
 compute(a,b,c)
