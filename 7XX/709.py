@@ -39,5 +39,5 @@ while 1:
         break
     dict1[key] = input("Value: ")
 
-for item in sorted(dict1):
+for item in sorted(dict1.keys()):
     print(f"{item}: {dict1[item]}")

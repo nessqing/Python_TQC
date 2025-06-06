@@ -14,14 +14,15 @@
 # 範例輸出
 # u occurs 4 time(s)
 
-def compute(u1, u2):
+def compute():
     count_word = 0
     for item in range(len(u1)):
         if u2 == u1[item]:
             count_word += 1
     print(f"{u2} occurs {count_word} time(s)")
-
-compute(input(),input())
+u1 = input()
+u2 = input()
+compute()
 
 
         

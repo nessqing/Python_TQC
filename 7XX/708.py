@@ -48,5 +48,5 @@ while 1:
 
 dic_1.update(dic_2)
 
-for item in sorted(dic_1):
+for item in sorted(dic_1.keys()):
     print(f"{item}: {dic_1[item]}")

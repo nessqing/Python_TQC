@@ -24,14 +24,13 @@
 # 範例輸出2
 # 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
 
-total = 0
+def compute(num):
+    for i in range(2,num):
+        mylist.append(mylist[i-1]+mylist[i-2])
+    for i in mylist:
+        print(f"{i}",end=" ")
+
+mylist = [0,1]
 num = eval(input())
-data = [ 0, 1 ]
-
-for i in range(2,num):
-    result = data[i - 1] + data[i - 2]
-    data.append(result)
-
-for item in data:
-    print(item, end= " ")
+compute(num)
 

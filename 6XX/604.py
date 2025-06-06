@@ -26,15 +26,11 @@
 # 18
 # 3
 
-from collections import Counter
-
-nums = []
-
+mylist=[0]*100
 for i in range(10):
-    nums.append(eval(input()))
-counter = Counter(nums).most_common(1)
-
-print(f"{counter[0][0]}")
-print(f"{counter[0][1]}")
+   n=int(input())
+   mylist[n]+=1
+print(mylist.index(max(mylist)))
+print(max(mylist))
 
 
