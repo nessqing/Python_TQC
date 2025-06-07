@@ -33,28 +33,15 @@
 # 範例輸出5
 # Not Prime
 
-#
-def compute(x):
-    if x <= 1:
-        print(f"Not Prime")
-        return
+def compute():
+    result = 'Prime'
+    if num <= 1:
+        return 'Not Prime'
+    for i in range(2,num):
+        if num % i == 0:
+            result = 'Not Prime'
+            break
+    return result
 
-    for i in range (2, x):
-        if x % i == 0:
-            print(f"Not Prime")
-            return
-    print(f"Prime")
-
-x = eval(input())
-compute(x)
-
-# x = eval(input())
-# def compute(x):
-#     if x <= 1: return 'Not Prime'
-#     result = 'Prime'
-#     for i in range(2, x):
-#         if x % i == 0:
-#             result = 'Not Prime'
-#             break
-#     return result
-# print( compute(x) )
+num = eval(input())
+print(compute())
